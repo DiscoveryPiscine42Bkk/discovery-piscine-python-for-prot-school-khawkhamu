@@ -1,0 +1,21 @@
+# string_are_arrays.py
+import sys
+
+def main():
+    """
+    Takes a string as a parameter and displays 'z' for each occurrence of 'z', or 'none' if no 'z' or wrong parameters.
+    """
+    if len(sys.argv) != 2:
+        print("none")
+        return
+
+    input_string = sys.argv[1]
+    z_count = input_string.count('z')
+
+    if z_count == 0:
+        print("none")
+    else:
+        print("z" * z_count)
+
+if __name__ == "__main__":
+    main()
