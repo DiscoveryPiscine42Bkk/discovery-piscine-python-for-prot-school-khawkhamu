@@ -1,0 +1,20 @@
+# float.py
+
+def main():
+    """
+    Prompts the user for a number and determines if it is a decimal or integer.
+    """
+
+    try:
+        num = float(input("Give me a number: "))
+
+        if num == int(num):
+            print("This number is an integer.")
+        else:
+            print("This number is a decimal.")
+
+    except ValueError:
+        print("Invalid input. Please enter a number.")
+
+if __name__ == "__main__":
+    main()
