@@ -1,0 +1,22 @@
+# up_low.py
+
+def main():
+    """
+    Prompts the user for a string and displays the string with the case of each letter swapped.
+    """
+
+    user_string = input("Enter a string: ")
+    swapped_string = ""
+
+    for char in user_string:
+        if char.isupper():
+            swapped_string += char.lower()
+        elif char.islower():
+            swapped_string += char.upper()
+        else:
+            swapped_string += char  # Keep non-alphabetic characters as they are
+
+    print(swapped_string)
+
+if __name__ == "__main__":
+    main()
