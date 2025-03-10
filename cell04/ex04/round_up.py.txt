@@ -1,0 +1,18 @@
+# round_up.py
+import math
+
+def main():
+    """
+    Prompts the user for a number and displays the rounded-up value.
+    """
+
+    try:
+        num = float(input("Give me a number: "))
+        rounded_up = math.ceil(num)  # Use math.ceil() to round up
+        print(rounded_up)
+
+    except ValueError:
+        print("Invalid input. Please enter a number.")
+
+if __name__ == "__main__":
+    main()
