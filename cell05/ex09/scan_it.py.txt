@@ -1,0 +1,21 @@
+import sys
+
+def main():
+    """
+    Counts the number of occurrences of a keyword in a string.
+    If the number of parameters is not 2 or the keyword is not found,
+    it displays 'none'.
+    """
+    if len(sys.argv) == 3:
+        keyword = sys.argv[1]
+        search_string = sys.argv[2]
+        count = search_string.count(keyword)
+        if count > 0:
+            print(count)
+        else:
+            print("none")
+    else:
+        print("none")
+
+if __name__ == "__main__":
+    main()
