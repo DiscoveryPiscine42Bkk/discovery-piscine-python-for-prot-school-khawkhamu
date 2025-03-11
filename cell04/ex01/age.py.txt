@@ -1,5 +1,3 @@
-# age.py
-
 age = int(input("Please tell me your age: 16"))
 
 print(f"You are currently {age} years old.")
