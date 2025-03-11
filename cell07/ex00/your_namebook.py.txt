@@ -1,0 +1,6 @@
+array_of_names = lambda name_dict: [f"{first.capitalize()} {last.capitalize()}" for first, last in name_dict.items()]
+
+names = {"john": "doe", "jane": "smith", "alice": "johnson"}
+
+for full_name in array_of_names(names):
+    print(full_name)
