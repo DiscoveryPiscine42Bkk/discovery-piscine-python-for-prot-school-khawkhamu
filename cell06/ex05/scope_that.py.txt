@@ -1,0 +1,11 @@
+def add_one(n):
+    return n + 1
+
+def main():
+    my_var = 5
+    print("Before calling add_one:", my_var)
+    add_one(my_var)
+    print("After calling add_one:", my_var)
+
+if __name__ == "__main__":
+    main()
