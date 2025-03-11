@@ -1,0 +1,15 @@
+def greetings(name="noble stranger"):
+    if isinstance(name, str):
+        print(f"Welcome, {name}!")
+    else:
+        print("Error: Name must be a string.")
+greetings("Alice")  # Should print: Welcome, noble stranger!
+greetings("Satler")  # Should print: Welcome, Alice!
+greetings(42)  # Should print: Error: Name must be a string.
+def main():
+    # Example usage inside main function
+    greetings("Charlie")
+    greetings("Johan")
+    greetings(123)
+if __name__ == "__main__":
+    main()
