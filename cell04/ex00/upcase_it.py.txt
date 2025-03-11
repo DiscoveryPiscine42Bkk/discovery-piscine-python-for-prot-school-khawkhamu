@@ -1,2 +1,2 @@
-word = input("Enter a word: cat")
+word = input("Enter a word: ")
 print(word.upper())
