@@ -1,11 +1,5 @@
 import sys
 
-def main():
-    """
-    This program displays the number of parameters passed to it.
-    """
-    num_params = len(sys.argv) - 1  # Subtract 1 to exclude the script name itself
-    print(f"Number of parameters: {num_params}.")
+num_params = len(sys.argv) - 1
 
-if __name__ == "__main__":
-    main()
+print(f"Number of parameters: {num_params}.")
