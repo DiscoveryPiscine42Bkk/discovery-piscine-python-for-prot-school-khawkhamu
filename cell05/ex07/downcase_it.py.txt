@@ -1,15 +1,2 @@
 import sys
-
-def main():
-    """
-    This program takes a string as a parameter and displays it in lowercase.
-    If the number of parameters is not 1, it displays 'none'.
-    """
-    if len(sys.argv) == 2:
-        input_string = sys.argv[1]
-        print(input_string.lower())
-    else:
-        print("none")
-
-if __name__ == "__main__":
-    main()
+print(sys.argv[1].lower() if len(sys.argv) == 2 else "none")
