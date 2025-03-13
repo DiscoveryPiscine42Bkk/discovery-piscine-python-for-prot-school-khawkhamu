@@ -1,17 +1,8 @@
-# append_it.py
 import sys
 
-def main():
-    """
-    Appends "ism" to each parameter passed as an argument, skipping those ending with "ism".
-    """
-    if len(sys.argv) == 1:
-        print("none")
-        return
-
-    for arg in sys.argv[1:]:
-        if not arg.endswith("ism"):
-            print(arg + "ism")
-
-if __name__ == "__main__":
-    main()
+if len(sys.argv) == 1:
+    print("none")
+else:
+    for param in sys.argv[1:]:
+        if not param.endswith("ism"):
+            print(param + "ism")
